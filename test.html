@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>Use the addEventListener() method to attach a "click" event to a p element:</p>
+
+<script>
+  const p = document.createElement("p");
+  document.body.append(p);
+  p.innerHTML = "Click me.";
+  p.id = "demo";
+  p.setAttribute("data-val", "aaa");
+  p.addEventListener("click", myFunction );
+
+  function myFunction(event) {
+    console.log(event);
+    event.target.innerHTML = "YOU CLICKED ME!   " + event.target.getAttribute("data-val");
+    console.log( "clicked");
+  }
+
+  
+console.log(sameDate(new Date("15/04/2022"), new Date()), " comparared dates");
+</script>
+
+</body>
+</html>

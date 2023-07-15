@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+            ToDo
+		</title>
+			<link rel="stylesheet" href="C:\Users\annaa\Documents\Fun programs\ToDoApp\calendar_style.css">
+        <script src="C:\Users\annaa\Documents\Fun programs\ToDoApp\compareDatesEasily.js"></script>
+		<script src="C:\Users\annaa\Documents\Fun programs\ToDoApp\Calendar.js"></script>
+		<script language='JavaScript'>
+
+
+
+
+
+
+//--------------------------------------------------------------------------
+
+
+
+
+
+
+
+		</script>
+	</head>
+	<body>
+
+		<input id="chosenDate" placeholder="Date" type="text"/>
+		<br>
+		<input id="chosenMonth" placeholder="Month (0-11)" type="text"/>
+		<br>
+		<input id="chosenYear" placeholder="Year" type="text"/>
+		<br>
+		<input id="chosenHour" placeholder="Hour" type="text"/>
+		<br>
+		<input id="chosenMinute" placeholder="Minute" type="text"/>
+		<br>
+		<button onclick="fill_out_calandar()">ok</button>
+
+		<table id="Calendar">
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+				<th>Sunday</th>
+			</tr>
+		</table>
+		<script language='JavaScript'>
+			document.addEventListener("13", TDonclick);
+			function C(){
+				var k;
+				var i;
+				var tr;
+				var td;
+				for(k=1; k<6; k++){	
+					tr = document.createElement("tr");
+					tr.id = "u" + k;
+					document.getElementById("Calendar").append(tr);
+					for(i=1; i<=7; i++){
+						td = document.createElement("td");
+						document.getElementById(tr.id).append(td);
+						td.id = "u"+ i + k;
+						td.setAttribute("data-val", td.id);
+						td.addEventListener("click", TDonclick);
+					}
+				}
+			}
+			C();
+
+		</script>	
+		<p id="seldate">-selected date here-</p>
+
+        <div id="ThisDay">
+            
+		</div>
+        <script>fill_out_calandar()</script>
+	</body>
+</html>
