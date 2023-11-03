@@ -1,66 +1,71 @@
 
-			@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-			body {
-				background-color: #20170b;
-				font: Light 300;
-				font-family: "Comfortaa", cursive;
-			}
-			table {
-				border: 1px;
-				border-color: #b0b3b8;
-				padding: 5px;
-			}
-			td {
-				color: #20170b;
-				width: 90px;
-				height: 70px;
-				text-align: center;
-				background-color: #624531;
-				border-radius: 15px;
-				border-width: 2px;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body {
+	background-color: #20170b;
+	font: Light 300;
+	font-family: "Comfortaa", cursive;
+}
+table {
+	border: 1px;
+	border-color: #b0b3b8;
+	padding: 5px;
+}
+td {
+	color: #20170b;
+	width: 90px;
+	height: 70px;
+	text-align: center;
+	background-color: #624531;
+	border-radius: 15px;
+	border-width: 2px;
 
-			}
-			button{
-				
-				color: #20170b;
-				width: 90px;
-				height: 30px;
-				text-align: center;
-				background-color: #CE78F3;
-				border-radius: 15px;
-				border-width: 2px;
-				font: Light 300;
-				font-family: "Comfortaa", cursive;
+}
+button{
+	
+	color: #20170b;
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	background-color: #CE78F3;
+	border-radius: 15px;
+	border-width: 2px;
+	font: Light 300;
+	font-family: "Comfortaa", cursive;
 
-			}
-			.today {
-				background-color: #20170b;
-			}
-			.chosen{
-				color:#CE78F3;
-				font-weight: 1000;
-			}
-			th {
-				color: #20170b;
-				width: 90px;
-				text-align: center;
-				padding: 5px;
-			}
-			p {
-				color: #20170b;
-			}
-			input {
-				width: 150px;
-				color: #20170b;
-				background-color: #18191A;
-				border-color: #b0b3b8;
-				border-radius: 10px;
-				font-size: 17px;
-				font: Light 300;
-				font-family: "Comfortaa", cursive;
-			}
-			.clickedCell{
-				border-color:#EDD4B2;
-				border-width:2px;
-				color:#20170b;
-			}
+}
+.today {
+	background-color: #20170b;
+}
+.chosen{
+	color:#CE78F3;
+	font-weight: 1000;
+}
+th {
+	color: #20170b;
+	width: 90px;
+	text-align: center;
+	padding: 5px;
+}
+p {
+	color: #CE78F3;
+}
+input {
+	width: 150px;
+	color: #CE78F3;
+	background-color: #18191A;
+	border-color: #b0b3b8;
+	border-radius: 10px;
+	font-size: 17px;
+	font: Light 300;
+	font-family: "Comfortaa", cursive;
+	
+}
+input::placeholder{
+	color:#ffffff
+}
+
+.clickedCell{
+	border-color:#EDD4B2;
+	border-width:2px;
+	color:#20170b;
+}
