@@ -15,7 +15,7 @@ var table_dates = new Array(35);
 var counter;
 var firstMonday;
 var fcd;
-var dateF = "a";
+var dateF = "a"; //what was dateF meant to be? it's redundant... never actually used
 var months_lang = ["January", "Febuary", "March", "April", "May", "June", "July", "Augaust", "September", "October", "November", "December"];
 var days_lang = ["Sunday",  "Monday",  "Tuesday",  "Wednesday",  "Thursday",  "Friday",  "Saturday"];
 var todayCell;
@@ -148,6 +148,6 @@ function TDonclick(){
 	document.getElementById("chosenDate").value = selectedDate.getDate();
 	document.getElementById("chosenMonth").value = selectedDate.getMonth();
 	document.getElementById("chosenYear").value = selectedDate.getFullYear();
-	//next line must be last
+	//next line must be last in the function
 	idOfSelCell = cell_id;
 }

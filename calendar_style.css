@@ -6,8 +6,6 @@ body {
 	font-family: "Comfortaa", cursive;
 }
 table {
-	border: 1px;
-	border-color: #b0b3b8;
 	padding: 5px;
 }
 td {
@@ -34,11 +32,14 @@ button{
 
 }
 .today {
-	background-color: #20170b;
+	border-width: 10px;
+	border-color: #a83248;
 }
 .chosen{
 	color:#CE78F3;
 	font-weight: 1000;
+	border-width: 1cm;
+	border-color: #EDD4B2;
 }
 th {
 	color: #20170b;
@@ -61,11 +62,14 @@ input {
 	
 }
 input::placeholder{
-	color:#ffffff
+	color:#ffffff;
 }
 
 .clickedCell{
 	border-color:#EDD4B2;
-	border-width:2px;
-	color:#20170b;
+	border-width:1cm;
+	color:#CE78F3;
+	font-style: italic;
+	font-weight: 1000;
+	background-color: #20170b;
 }
