@@ -128,6 +128,8 @@ function fill_out_calandar(){
 		}
 	}
 }
+
+
 function TDonclick(){
 	if(idOfSelCell!=null){
 		document.getElementById(idOfSelCell).classList.remove("clickedCell")

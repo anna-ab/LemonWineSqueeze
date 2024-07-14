@@ -73,3 +73,19 @@ input::placeholder{
 	font-weight: 1000;
 	background-color: #20170b;
 }
+
+.currentMonth{
+	background-color: #624531;
+}
+
+.nextMonth{
+	background-color: #624531;
+}
+
+.colourBlockReference{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	display: inline-block;
+	border: solid 1px #ffffff;
+}
