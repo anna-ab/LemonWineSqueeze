@@ -4,6 +4,7 @@ body {
 	background-color: #20170b;
 	font: Light 300;
 	font-family: "Comfortaa", cursive;
+	color: #ffffff;
 }
 table {
 	padding: 5px;
@@ -97,4 +98,8 @@ input::placeholder{
 #MainToDoList{
 	width:400px;
 	text-align: internal left;
+}
+
+#WeeklyCalendar{
+	height:300px;
 }

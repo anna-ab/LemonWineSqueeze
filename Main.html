@@ -7,23 +7,8 @@
 			<link rel="stylesheet" href="calendar_style.css">
         <script src="compareDatesEasily.js"></script>
 		<script src="Calendar.js"></script>
-		<script language='JavaScript'>
-
-
-
-
-
-
-//--------------------------------------------------------------------------
-
-
-
-
-
-
-
-		</script>
 	</head>
+	//-------------------------------------------------------------------------
 	<body>
 
 		<input id="chosenDate" placeholder="Date" type="text"/>
@@ -37,6 +22,8 @@
 		<input id="chosenMinute" placeholder="Minute" type="text"/>
 		<br>
 		<button onclick="fill_out_calandar()">ok</button>
+
+		//----------------------------------------------------------------------
 
 		<table id="Calendar", class="Calendar">
 			<tr>
@@ -72,6 +59,9 @@
 			C();
 
 		</script>	
+
+		/------------------------------------------------
+
 		<p id="seldate">-selected date here-</p>
 
         <div id="ThisDay">
@@ -88,10 +78,10 @@
 			<div style= "background-color: #4a372a;", class="colourBlockReference"></div>
 		</div>
 
-
+		//---------------------------------------------------
 
 		<div style="height:100px; width:1px;", id="paddingBlock"></div>
-		<div id="ToDoListBlock">
+		<div id="ToDoListBlock", style="visibility: collapse;">
 			<div id="MainToDoListBlock">
 				<table id="MainToDoList">
 					<tr>
@@ -106,6 +96,31 @@
 					</tr>
 				</table>
 			</div>
+		</div>
+
+		//------------------------------------------------
+
+		<div>
+			<table  id="WeeklyCalendar">
+				<tr>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+					<th>Sunday</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
