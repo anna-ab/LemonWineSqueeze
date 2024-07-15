@@ -100,6 +100,22 @@ input::placeholder{
 	text-align: internal left;
 }
 
-#WeeklyCalendar{
-	width :1500px;
+
+#Monday, #Tuesday, #Wednesday, #Thursday, #Friday, #Saturday, #Sunday{
+	text-align: start;
+	vertical-align: text-top;
+	font-size: 0.8cm;
+	padding: 5px;
+	border-radius: 2px;
+	width: 200px;
+	height: 400px;
+}
+
+#TimeOfDay{
+	color:#EDD4B2;
+	font-size: 14px;
+	vertical-align: text-top;
+	padding: 0px;
+	background-color: #20170b;
+	text-align: right;
 }
