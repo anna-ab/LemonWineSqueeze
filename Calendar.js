@@ -87,7 +87,7 @@ function fill_out_calandar(){
 		alert("invalid date")
 	}
 	counter = 0;
-	formatedDate = new Date(chosenYear+"/"+(chosenMonth+1)+"/"+chosenDate+" "+chosenHour+":"+chosenMinute);
+	formatedDate = new Date(chosenYear+"/"+(parseInt(chosenMonth)+1)+"/"+chosenDate+" "+chosenHour+":"+chosenMinute);
 	fcd=new Date(formatedDate);
 	firstMonday = formatedDate;
 	while(firstMonday.getDay()!==1){
@@ -114,7 +114,7 @@ function fill_out_calandar(){
 				document.getElementById(cell_id).innerHTML = new Date(table_dates[counter]).getDate() + " " + months_lang[new Date(table_dates[counter]).getMonth()];
 				//console.log("cell_id: ", cell_id, "cell inner: ",  document.getElementById(cell_id).innerHTML, "date string: ", table_dates[counter]);
 				if(new Date(table_dates[counter]).getTime()==new Date(fcd).getTime()){
-					document.getElementById(cell_id).classList.add("chosen");
+					//document.getElementById(cell_id).classList.add("chosen");   temporerally commented out
 					chosenCell = document.getElementById(cell_id);
 				}
 				if(sameDateAndYear(new Date(), table_dates[counter])){

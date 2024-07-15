@@ -15,7 +15,6 @@ td {
 	text-align: center;
 	background-color: #624531;
 	border-radius: 15px;
-	border-width: 2px;
 
 }
 button{
@@ -32,14 +31,12 @@ button{
 
 }
 .today {
-	border-width: 10px;
-	border-color: #a83248;
+	border: solid 2px #a83248;
 }
 .chosen{
 	color:#CE78F3;
 	font-weight: 1000;
-	border-width: 1cm;
-	border-color: #EDD4B2;
+	border: solid 2px #EDD4B2;
 }
 th {
 	color: #20170b;
@@ -66,8 +63,6 @@ input::placeholder{
 }
 
 .clickedCell{
-	border-color:#EDD4B2;
-	border-width:1cm;
 	color:#CE78F3;
 	font-style: italic;
 	font-weight: 1000;
