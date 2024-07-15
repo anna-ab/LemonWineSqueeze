@@ -38,8 +38,13 @@ button{
 	font-weight: 1000;
 	border: solid 2px #EDD4B2;
 }
+tr{
+	color: #EDD4B2;
+	text-align: center;
+
+}
 th {
-	color: #20170b;
+	color: #EDD4B2;
 	width: 90px;
 	text-align: center;
 	padding: 5px;
@@ -83,4 +88,13 @@ input::placeholder{
 	border-radius: 10px;
 	display: inline-block;
 	border: solid 1px #ffffff;
+}
+
+.Calendar {
+	font-family: "Comfortaa", cursive;
+}
+
+#MainToDoList{
+	width:400px;
+	text-align: internal left;
 }
