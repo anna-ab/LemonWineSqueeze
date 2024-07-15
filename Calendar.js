@@ -24,6 +24,11 @@ var selectedDate;
 var idOfSelCell;
 
 function fill_out_calandar(){
+	if(document.getElementsByClassName("clickedCell").length != 0){
+		var currentlyClickedCell = document.getElementsByClassName("clickedCell")[0].id;
+		var cell = document.getElementById(currentlyClickedCell);
+		cell.classList.remove("clickedCell");
+	}
 	chosenDate = document.getElementById("chosenDate").value *1;
 	chosenMonth = document.getElementById("chosenMonth").value;
 	chosenYear = document.getElementById("chosenYear").value *1;
