@@ -2,8 +2,6 @@
 var j = "";
 var date_now = new Date();
 var i;
-var p = document.createElement("p");
-var P1;
 var chosenDate;
 var chosenMonth;
 var chosenYear;
@@ -64,18 +62,8 @@ function fill_out_calandar(){
 						if((chosenHour+"").length==1){
 							chosenHour = "0" + chosenHour;
 						}
-						if(dateF=="a"){
-							j = months_lang[chosenMonth] + " " + chosenDate + ", " + chosenYear + " " + chosenHour + ":" + chosenMinute + ":00";
-							P1 = days_lang[date_now.getDay(j)] + " "+ j;
-							p.innerHTML = P1;
-							document.body.appendChild(p);
-						}
-						else if(dateF=="b"){
-							j = months_lang[chosenMonth] + " " + chosenDate + ", " + chosenYear + " " + chosenHour + ":" + chosenMinute + ":00";
-							P1 = days_lang[date_now.getDay(j)] + " "+ j;
-							p.innerHTML = P1;
-							document.body.appendChild(p);
-						}
+						j = months_lang[chosenMonth] + " " + chosenDate + ", " + chosenYear + " " + chosenHour + ":" + chosenMinute + ":00";
+						document.getElementById("seldate").innerHTML = days_lang[date_now.getDay(j)] + " "+ j;
 					}else{
 						alert("invalid month")
 					}
@@ -93,6 +81,8 @@ function fill_out_calandar(){
 	}
 	counter = 0;
 	formatedDate = new Date(chosenYear+"/"+(parseInt(chosenMonth)+1)+"/"+chosenDate+" "+chosenHour+":"+chosenMinute);
+	document.getElementById("seldate").value = formatedDate;
+	console.log(document.getElementById("seldate").value)
 	fcd=new Date(formatedDate);
 	firstMonday = formatedDate;
 	while(firstMonday.getDay()!==1){
