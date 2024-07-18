@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 body {
-	background-color: #20170b;
+	background-color: #140f07;
 	font: Light 300;
 	font-family: "Comfortaa", cursive;
 	color: #ffffff;
@@ -31,13 +31,14 @@ button{
 	font-family: "Comfortaa", cursive;
 
 }
-.today {
-	border: solid 2px #a83248;
-}
-.chosen{
+.clickedCell{
 	color:#CE78F3;
+	font-style: italic;
 	font-weight: 1000;
-	border: solid 2px #EDD4B2;
+	background-color: #20170b;
+}
+.today {
+	color: #EDD4B2;
 }
 tr{
 	color: #EDD4B2;
@@ -62,19 +63,10 @@ input {
 	font-size: 17px;
 	font: Light 300;
 	font-family: "Comfortaa", cursive;
-	
 }
 input::placeholder{
 	color:#ffffff;
 }
-
-.clickedCell{
-	color:#CE78F3;
-	font-style: italic;
-	font-weight: 1000;
-	background-color: #20170b;
-}
-
 .currentMonth{
 	background-color: #624531;
 }
@@ -118,4 +110,12 @@ input::placeholder{
 	padding: 0px;
 	background-color: #20170b;
 	text-align: right;
+}
+
+.ContentBlock{
+	width: 900px;
+	margin: auto;
+	background-color: #20170b;
+	border: solid 1px white;
+	border-radius: 10px;
 }
