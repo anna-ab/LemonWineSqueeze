@@ -12,7 +12,7 @@ var k;
 var table_dates = new Array(35); //the dates that actually show up inside of the cells
 var counter;
 var firstMonday; //the date of the first cell in the calendar table, top left corner
-var fcd; //forgot what this is maybe formatter something c date??
+var fcd; //forgot what this is maybe formatter calendar date??
 var months_lang = ["January", "Febuary", "March", "April", "May", "June", "July", "Augaust", "September", "October", "November", "December"];
 var days_lang = ["Sunday",  "Monday",  "Tuesday",  "Wednesday",  "Thursday",  "Friday",  "Saturday"];
 var todayCell;
